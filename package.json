@@ -1,0 +1,22 @@
+{
+  "name": "esbuild-plugin-tsalias-path",
+  "version": "1.0.0",
+  "description": "A plugin to resolve paths with aliases by TypeScript configuration",
+  "main": "dist/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tascen/esbuild-plugin-tsAlias-path.git"
+  },
+  "keywords": [
+    "esbuild",
+    "plugin",
+    "typescript"
+  ],
+  "author": "Тимофеев Александр Дмитриевич (Tascen)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tascen/esbuild-plugin-tsAlias-path/issues"
+  },
+  "homepage": "https://github.com/Tascen/esbuild-plugin-tsAlias-path#readme"
+}
