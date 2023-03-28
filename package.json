@@ -2,8 +2,19 @@
   "name": "esbuild-plugin-tsalias-path",
   "version": "1.0.0",
   "description": "A plugin to resolve paths with aliases by TypeScript configuration",
-  "main": "dist/index.js",
-  "scripts": {},
+  "type": "module",
+  "source": "src/index.js",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle --target=node",
+    "watch": "microbundle watch --target=node --compress=false --raw"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tascen/esbuild-plugin-tsAlias-path.git"
@@ -18,5 +29,14 @@
   "bugs": {
     "url": "https://github.com/Tascen/esbuild-plugin-tsAlias-path/issues"
   },
-  "homepage": "https://github.com/Tascen/esbuild-plugin-tsAlias-path#readme"
+  "homepage": "https://github.com/Tascen/esbuild-plugin-tsAlias-path#readme",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "peerDependencies": {
+    "node": "^14.17.0",
+    "esbuild": "^0.14.54",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {}
 }
